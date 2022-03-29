@@ -6,7 +6,7 @@
 /*   By: ldurante <ldurante@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 19:57:15 by ldurante          #+#    #+#             */
-/*   Updated: 2022/03/29 22:35:47 by ldurante         ###   ########.fr       */
+/*   Updated: 2022/03/29 23:41:17 by ldurante         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,16 +23,17 @@ class Zombie
 
 	public:
 	/* Constructor */
-	Zombie(std::string name);
+	Zombie(void);
 
 	/* Destructor */
-	~Zombie( void );
+	~Zombie(void);
 
 	/* Member functions */
+	void giveName(std::string name);
+	std::string getName(void);
 	void announce(void);
 };
 
-Zombie* newZombie( std::string name );
-void randomChump( std::string name );
+Zombie* zombieHorde( int N, std::string name );
 
 #endif

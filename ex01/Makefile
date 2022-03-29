@@ -6,13 +6,13 @@
 #    By: ldurante <ldurante@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/29 22:43:34 by ldurante          #+#    #+#              #
-#    Updated: 2022/03/29 22:44:02 by ldurante         ###   ########.fr        #
+#    Updated: 2022/03/29 23:49:02 by ldurante         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # VARIABLE DECLARATIONS #
 
-NAME = Brainzzz
+NAME = More_Brainzzz
 CXX = clang++
 RM = rm -f
 CXXFLAGS = -Wall -Werror -Wextra -std=c++98
