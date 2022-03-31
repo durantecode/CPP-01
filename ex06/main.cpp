@@ -6,20 +6,23 @@
 /*   By: ldurante <ldurante@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 23:41:32 by ldurante          #+#    #+#             */
-/*   Updated: 2022/03/31 20:10:42 by ldurante         ###   ########.fr       */
+/*   Updated: 2022/03/31 20:02:36 by ldurante         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Karen.hpp"
 
-int main(void)
+int main(int argc, char **argv)
 {
-	Karen karen;
+	Karen karenFilter;
+	std::string level;
 
-	karen.complain("debug");
-	karen.complain("info");
-	karen.complain("warning");
-	karen.complain("error");
-	karen.complain("screams");
+	if (argc != 2)
+	{
+		std::cout << "error: usage: ./karenFilter [level]" << std::endl;
+		return (1);
+	}
+	level = argv[1];
+	karenFilter.complain(level);
 	return (0);
 }
