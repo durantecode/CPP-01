@@ -6,7 +6,7 @@
 /*   By: ldurante <ldurante@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 23:42:29 by ldurante          #+#    #+#             */
-/*   Updated: 2022/03/31 20:29:38 by ldurante         ###   ########.fr       */
+/*   Updated: 2022/05/17 16:02:50 by ldurante         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ int Karen::getLevel(std::string level)
 void Karen::complain(std::string level)
 {
 	int levelNum;
-	void (Karen::*functionsPointer[4])(void);
+	void (Karen::*functionsPointer[4])();
 
 	functionsPointer[0] = &Karen::debug;
 	functionsPointer[1] = &Karen::info;
